@@ -24,7 +24,9 @@ function UserList() {
     }
 
     const deleteUser = (maxId) => {
-        dispatch(deleteUsr(maxId));
+        let cnfrm = window.confirm("Are you sure you want to delete?");
+        if(cnfrm)
+            dispatch(deleteUsr(maxId));
     }
 
     return (
