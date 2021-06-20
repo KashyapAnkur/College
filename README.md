@@ -1,3 +1,11 @@
+********************************************************
+# first type command:
+# npm install
+# it will install all the dependencies
+# start react app with below command:
+# npm start
+********************************************************
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
