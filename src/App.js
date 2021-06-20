@@ -5,13 +5,11 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import UserList from './Components/UserList';
 import UserForm from './Components/UserForm';
 
-
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
           <Switch>
-              
               <Route exact strict path="/" >
                 <Users />
               </Route>
@@ -21,11 +19,9 @@ function App() {
               <Route exact strict path="/userlist">
                 <UserList />
               </Route>
-
           </Switch>
       </BrowserRouter>
     </div>
   );
 }
-
 export default App;
