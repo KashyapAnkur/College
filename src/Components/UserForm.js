@@ -14,7 +14,7 @@ function UserForm() {
     const [colleges, setColleges] = useState([]);
     
     const dispatch = useDispatch(); // to call actions which contains methods to access state inside reducers
-    const { reset, control, register, handleSubmit, watch, setValue, formState: { errors } } = useForm();  // used react hook form for form data handling and validation
+    const { reset, control, register, handleSubmit, formState: { errors } } = useForm();  // used react hook form for form data handling and validation
 
     const onSubmit = data => {
         if(data.hasOwnProperty("otherhobby")) {    // checking if otherhobby is present in data object
